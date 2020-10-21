@@ -15,4 +15,6 @@ signals:
 
 };
 
+
+
 #endif // ZDWINDOW_H

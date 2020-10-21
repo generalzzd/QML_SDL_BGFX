@@ -40,11 +40,12 @@ HEADERS += \
 
 
 
-INCLUDEPATH += D:\SDK\SDL2-2.0.12\include
-INCLUDEPATH += D:\SDK\bgfx\include
-INCLUDEPATH += D:\SDK\bx\include
-INCLUDEPATH += D:\SDK\bx\include\compat\msvc\
+INCLUDEPATH += /usr/local/include/
+INCLUDEPATH += /Users/zidizhang/Downloads/bgfx/bgfx/include/
+INCLUDEPATH += /Users/zidizhang/Downloads/bgfx/bimg/include/
+INCLUDEPATH += /Users/zidizhang/Downloads/bgfx/bx/include/
 
-LIBS += -LD:\SDK\SDL2-2.0.12\mbuildx64\Release\ -lSDL2
-LIBS += -LD:\SDK\bgfx\.build\win64_vs2015\bin\ -lbgfxRelease -lbimg_decodeRelease -lbimgRelease -lbxRelease
-LIBS += -luser32 -lgdi32
+LIBS += -L/usr/local/lib/ -lSDL2
+LIBS += -L/Users/zidizhang/Downloads/bgfx/bgfx/.build/osx/bin/ -lbgfxRelease -lbimg_decodeRelease -lbimgRelease -lbxRelease
+LIBS += -framework CoreGraphics -framework CoreFoundation -framework Foundation \
+            -framework AppKit -framework IOKit -framework QuartzCore -framework Metal
