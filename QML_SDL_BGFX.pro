@@ -1,6 +1,6 @@
 Release: QMAKE_CXXFLAGS = /MT
 
-QT += quick
+QT += quick qml
 
 CONFIG += c++11
 
@@ -46,6 +46,10 @@ INCLUDEPATH += /Users/zidizhang/Downloads/bgfx/bimg/include/
 INCLUDEPATH += /Users/zidizhang/Downloads/bgfx/bx/include/
 
 LIBS += -L/usr/local/lib/ -lSDL2
-LIBS += -L/Users/zidizhang/Downloads/bgfx/bgfx/.build/osx/bin/ -lbgfxRelease -lbimg_decodeRelease -lbimgRelease -lbxRelease
 LIBS += -framework CoreGraphics -framework CoreFoundation -framework Foundation \
             -framework AppKit -framework IOKit -framework QuartzCore -framework Metal
+
+LIBS += -L/Users/zidizhang/QtProjects/QTOpenGL/osx -lbgfxRelease -lbimg_decodeRelease  -lbimgRelease -lbxRelease
+
+
+
